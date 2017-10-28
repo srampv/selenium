@@ -46,11 +46,11 @@ public class TestSelenium {
         screenshotHelper = new ScreenshotHelper();
     }
 
-//    @After
-//    public void saveScreenshotAndCloseBrowser() throws IOException {
-//        screenshotHelper.saveScreenshot("screenshot.png");
-//        driver.quit();
-//    }
+    @After
+    public void saveScreenshotAndCloseBrowser() throws IOException {
+        screenshotHelper.saveScreenshot("screenshot.png");
+        driver.quit();
+    }
     @Test
     public void pageTitleAfterSearchShouldBeginWithDrupal() throws IOException, InterruptedException {
         assertEquals("Welcome: Mercury Tours", "Welcome: Mercury Tours", driver.getTitle());
