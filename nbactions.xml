@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-skip</actionName>
+            <displayName>skip</displayName>
+            <goals>
+                <goal>-U</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>test.single</actionName>
+            <packagings>
+                <packaging>*</packaging>
+            </packagings>
+            <goals>
+                <goal>test-compile</goal>
+                <goal>surefire:test</goal>
+            </goals>
+            <properties>
+                <test>${packageClassName}</test>
+                <webdriver.chrome.driver>C:\Users\sramp\Downloads\chromedriver.exe</webdriver.chrome.driver>
+                <webdriver.base.url>http://www.google.com</webdriver.base.url>
+            </properties>
+        </action>
+    </actions>
