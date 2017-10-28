@@ -20,7 +20,7 @@
             </goals>
             <properties>
                 <test>${packageClassName}</test>
-                <webdriver.chrome.driver>C:\Users\sramp\Downloads\chromedriver.exe</webdriver.chrome.driver>
+                <webdriver.chrome.driver>/Users/shashank/Downloads/chromedriver</webdriver.chrome.driver>
                 <webdriver.base.url>http://www.google.com</webdriver.base.url>
             </properties>
         </action>
